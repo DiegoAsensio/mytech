@@ -281,7 +281,7 @@ nav ul li:hover {
 }
 
 .products-grid .items .item .item-wrapper .content-container {
-	color: white;
+	color: red;
 	position: absolute;
 	left: 50%;
 	top: 50%;
