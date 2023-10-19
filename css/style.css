@@ -163,7 +163,7 @@ nav ul li:hover {
 }
 
 @media (max-width: 1024px) {
-	.lp-vertical-paddings {
+	.vertical-paddings {
 		padding-top: 64px;
 		padding-bottom: 64px;
 	}
@@ -193,6 +193,20 @@ nav ul li:hover {
 .boxed-text__description {
 	margin-bottom: 50px;
 	text-align: center;
+	animation-duration: 3s;
+	animation-name: slidein;
+}
+
+@keyframes slidein {
+	from {
+		margin-left: 100%;
+		width: 300%;
+	}
+
+	to {
+		margin-left: 0%;
+		width: 100%;
+	}
 }
 
 .button-container {
@@ -281,7 +295,7 @@ nav ul li:hover {
 }
 
 .products-grid .items .item .item-wrapper .content-container {
-	color: red;
+	color: #fff;
 	position: absolute;
 	left: 50%;
 	top: 50%;
