@@ -361,32 +361,10 @@ nav ul li:hover {
 }
 
 @media (min-width: 1025px) {
-	.products-grid .items .item .item-wrapper .content-container .button-wrapper {
-		max-height: 0;
-		opacity: 0;
-	}
-}
-
-@media (max-width: 1024px) {
-	.products-grid .items .item .item-wrapper .content-container .button-wrapper {
-		display: none;
-	}
-}
-
-@media (min-width: 1025px) {
-	.products-grid
-		.items
-		.item:hover
-		.item-wrapper
-		.content-container
-		.button-wrapper {
+	.products-grid .items .item:hover .item-wrapper .content-container {
 		max-height: 90px;
 		opacity: 1;
 	}
-}
-
-.products-grid .items .item .item-wrapper .content-container .button-wrapper {
-	transition: all linear 0.4s;
 }
 
 /*button theme*/
@@ -653,8 +631,12 @@ textarea {
 }
 
 /* Products page */
+.products-opening {
+	background-image: url(../assets/products-opening.png);
+}
+
 .products-container {
-	padding: 96px 0 96px 0;
+	padding: 96px 0 0 0;
 	background-color: #000;
 	box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
@@ -769,4 +751,38 @@ textarea {
 /* Add spacing to the top of the modal content */
 .modal-content {
 	padding-top: 20px;
+}
+
+/* Responsive products page */
+
+@media only screen and (max-width: 768px) {
+	.main-products-container {
+		flex-direction: column; /* Display products in a single column */
+		align-items: center; /* Center items */
+	}
+
+	.product {
+		flex: 0 0 100%; /* Products take full width */
+		margin-bottom: 20px; /* Spacing between products */
+	}
+
+	.cart-item {
+		width: 100%; /* Cart items take full width */
+		margin-bottom: 10px;
+	}
+
+	.modal-content {
+		width: 90%; /* Adjust modal width for smaller screens */
+		margin: 15% auto; /* Center modal on smaller screens */
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.modal-content {
+		width: 90%; /* Adjust modal width for smaller screens */
+	}
 }
