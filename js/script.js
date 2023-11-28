@@ -19,21 +19,21 @@ document.addEventListener("DOMContentLoaded", function() {
             "imagen": "../assets/galaxy-book.jpg",
             "tipo": "Notebook",
             "cantidad": 1,
-            "precio": 1000
+            "precio": 824999
         },
         {
             "id": "3",
             "titulo": "Iphone 15",
             "imagen": "../assets/iphone-15.png",
             "tipo": "Celular",
-            "precio": 1000
+            "precio": 1380000
         },
         {
             "id": "4",
             "titulo": "Redmi Note 12 Pro",
             "imagen": "../assets/redmi-note.jpg",
             "tipo": "Celular",
-            "precio": 1000
+            "precio": 418999
         },
         {
             "id": "5",
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "imagen": "../assets/ps5.png",
             "tipo": "Consola",
             "cantidad": 1,
-            "precio": 1000
+            "precio": 1293999
         },
         {
             "id": "6",
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "imagen": "../assets/Nintendo-Switch.png",
             "tipo": "Consola",
             "cantidad": 1,
-            "precio": 1000
+            "precio": 699999
         }
     ];
 
